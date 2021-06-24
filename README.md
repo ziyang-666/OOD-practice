@@ -1,26 +1,25 @@
-# Around
-Description: a social app which can search the post information, photo, video by the user. The user can also post the image and video.
+# HashMap
+Description: this is a practie to implement seperate chaining hashmap in java
 
-## task
-* Designed and implemented a social network web application with React JS.
-* Implemented features for users to create and browse posts and support search nearby posts.
-* Improved the authentication using token-based registration/login/logout flow with React Router v4 and server-side user authentication with JWT.
-Backend
-* Launched a scalable web service in Go to handle posts and deployed to Google Cloud (Google App Engine) 
-* deploy the frontend on the amazon amplify
+## API
+* + size() : int
+* + isEmpty(): boolean
+* + containsKey(K) : boolean
+* + containsValue(V) : boolean
+* + put(K, V): V
+* + remove(K) : V
 
-## deploy at
-https://main.d2rpjckf5nqy94.amplifyapp.com
+## Fields
+* - size: int
+* - load_factor: float
+* - array : Entry<K, V>[]
 
-## Effect
-![app](app.jpg)
-
-## Problem:
-The elasticsearch currently only return 10 result
-
-## To do:
-support to return more result.
-
+## Processes of implementation
+1. Define the class for each entry
+2. maintain an array of entries
+3. hash(key) to get the hash#
+4. from the hash#, mapped to the entry index
+5. when iterate the corresponding entry for the given key, which is actually a singly linked list, we nned compare each of the entry in the list, if the key is the same as the key we want
 
 
 
